@@ -4,16 +4,18 @@ class Solution:
         length=len(height)
         left = 0
         right = length - 1
+        max_area = 0
 
         while left < right:
-            height = min(height[left], height[right])
+            h = min(height[left], height[right])
             width = right - left
-            area = height * width
+            area = h* width
+            max_area = max(max_area, area)
             if height[left] < height[right]:
                 left += 1
             else:
                 right -= 1
-            return area
+            return max_area
 
     
 object1=Solution()
