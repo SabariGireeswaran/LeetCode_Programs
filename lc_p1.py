@@ -1,3 +1,4 @@
+#1. Two sum 
 nums=[9,12,1,3,2,6,4,9]
 target=int(input("Enter a number:"))
 for i in range(len(nums)):

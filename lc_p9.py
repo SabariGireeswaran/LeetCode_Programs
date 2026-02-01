@@ -1,3 +1,4 @@
+#242. Is Anagram
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         SortedS = sorted(s)
